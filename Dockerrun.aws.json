@@ -28,6 +28,7 @@
             "image": "rsimmons482016/multi-nginx",
             "hostname": "nginx",
             "essential": true,
+            "memoryReservation": 128,
             "portMappings": [
                 {
                     "hostPort": 80,
@@ -37,8 +38,8 @@
             "links": [
                 "client", 
                 "server"
-            ],
-            "memoryReservation": 128
+            ]
+            
 
         }
     ]
